@@ -31,18 +31,17 @@ class Account:
     def __init__(self, user_name, pin_number):
         self.user_name = user_name
         self.pin_number = pin_number
-        self.user_data = user_data
         
     def display_balance(self):
-        balance = user_data[self.user_name][1]
-        if self.pin_number == user_data[self.user_name][0]:
+        balance = self.user_data[self.user_name][1]
+        if self.pin_number == self.user_data[self.user_name][0]:
             return "Your balance is {} Euro.".format(balance)
         else:
             return "Your pin is incorrect."
 
     def withdraw_money(self, amount):
-        balance = user_data[self.user_name][1]
-        if self.pin_number == user_data[self.user_name][0]:
+        balance = self.user_data[self.user_name][1]
+        if self.pin_number == self.user_data[self.user_name][0]:
             if amount <= balance:
                 balance -= amount
                 return "Withdrew {} EUR. New balance is: {} EUR.".format(amount, balance)
@@ -50,4 +49,7 @@ class Account:
                 return "You are not allowed to withdraw more money than you have on your account!"
         else:
             return "Your pin is incorrect."
+<<<<<<< HEAD
 '''
+=======
+>>>>>>> 9503d1d88a87c2e35d119fbcf7cbe04aee3c2e7e
