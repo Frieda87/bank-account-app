@@ -1,3 +1,11 @@
 /bank_account_app/__pycache__
 /crazyshit/__pycache__
 /__pycache__
+/venv
+postman2.json
+/crazyshit/tests/__pycache__
+/crazyshit/tests/.pytest_cache
+/.vscode
+/.pytest_cache
+/bankingApp/__pycache__
+.DS_Store
