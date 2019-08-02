@@ -49,7 +49,4 @@ class Account:
                 return "You are not allowed to withdraw more money than you have on your account!"
         else:
             return "Your pin is incorrect."
-<<<<<<< HEAD
 '''
-=======
->>>>>>> 9503d1d88a87c2e35d119fbcf7cbe04aee3c2e7e

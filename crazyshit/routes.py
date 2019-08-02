@@ -85,8 +85,8 @@ def withdraw(user_id):
 @app.route('/users/<int:user_id>/transfer', methods=['PATCH'])
 def transfer_money(user_id):
     data = request.get_json(force=True)
-    pin = data['pin']
     amount = data['amount']
+    pin = data['pin']
     receiver_id = data['receiver_id']
     sender = User.query.get_or_404(user_id, description="Account holder does not exist.")
     if pin == int(sender.pin):
@@ -127,10 +127,10 @@ def transfer(user_id):
             else:
                 abort(400, description='You dont have enought amount of money in your acount!')
         else:
-            abort(400, description="Pin is not correct")'''
+            abort(400, description="Pin is not correct")
 
 
-'''
+
     pin_number = request.args.get('pin') 
     sender = request.args.get('sender') 
     receiver = request.args.get('receiver') 
